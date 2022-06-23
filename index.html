@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous"
+        />
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="handlers.js" type="module"></script> -->
+    <title>Todo</title>
+</head>
+<body>
+    <div class="head">Todo</div>
+    <div class="container">
+        <div class="add-todo">
+            <input type="text" class="add-input form-control" placeholder="Add new Todo">
+            <button class="add-button btn btn-primary">Add</button>
+        </div>
+        <div class="menu">
+            <button type="button" class="btn btn-primary all-button">All</button>
+            <button type="button" class="btn btn-primary active-button">Active</button>
+            <button type="button" class="btn btn-primary done-button">Done</button>
+            <div class="dropdown sort">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sort button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item normal-sort" href="#">Normal</a></li>
+                  <li><a class="dropdown-item alphabetical-sort" href="#">Alphabetical</a></li>
+                  <li><a class="dropdown-item random-sort" href="#">Random</a></li>
+                </ul>
+              </div>
+        </div>
+        <div class="todo"></div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+}
+
+body {
+    background-color: #fff;
+}
+
+.head {
+    transition-property: color, background;
+    background: linear-gradient(#bbb, #fff);
+    transition-duration: 200ms;
+    transition-delay: 200ms;
+    font-size: 30px;
+    /* border: 1px solid black; */
+    text-align: center;
+    /* margin-bottom:20px; */
+}
+
+.head:hover {
+    background: linear-gradient(#fff, #bbb);
+    color: #fff;
+}
+
+.container {
+    background: linear-gradient(#fff, #ccc);
+    border: 1px solid #000;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    width: 900px;
+    margin-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.add-todo {
+    display: flex;
+    height: 35px;
+    /* width: 900px; */
+    
+    margin-bottom: 1rem;
+}
+
+.add-input {
+    transition-property: width, border-radius;
+    transition-duration: 1s;
+    transition-delay: 200ms;
+    width: 15rem;
+    border-radius: 15px;
+    margin-left: auto;
+}
+
+.add-input:hover {
+    width: 25rem;
+    border-radius: 4px;
+}
+
+.add-input:focus {
+    /* outline: 2px solid rgb(0, 174, 255); */
+    width: 25rem;
+    border-radius: 4px;
+}
+
+.add-button {
+    /* border-radius: 4px; */
+    /* border-color: lightblue; */
+    /* outline: none; */
+    margin-right: auto;
+    /* width: 40px; */
+}
+
+/* .add-button:hover {
+    outline: 2px solid rgb(110, 171, 231);
+} */
+
+/* @media (max-width: 900px) {
+    .container {
+        width: 700px;
+    }
+} */
+
+.todo {
+    display: block;
+    /* width: 750px; */
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.row {
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 3px;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-check-input {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin-left: 0.25rem;
+
+}
+
+.title {
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.title::first-letter {
+    color:blue;
+    text-transform: capitalize;
+}
+
+.btn-close {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.25rem;
+}
+
+.menu {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.sort {
+    height: 35px;
+    margin-left: auto;
+}
+
+.active-button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
